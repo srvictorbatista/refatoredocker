@@ -32,4 +32,5 @@ Ao fim da execução será exibida uma tabela com fnformações detalhadas do do
 Caso o Docker Snap não esteja presente. O script informará isto no terminal, não realizando a instalação.
 
 Caso queira reportar alguma falha ou melhoria, será um prazer receber o seu contato.
-t.me/LevyMac
+
+https://t.me/LevyMac
