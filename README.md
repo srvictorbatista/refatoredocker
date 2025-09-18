@@ -9,7 +9,7 @@ Este script foi testado em ambientes Ubuntu 22.04, Ubuntu 25 e usado em produç�
 ### Ao executar este script uma contagem regressiva de 60 segundos é iniciada, antes de realizar as alterações necessárias.
 
 ## AVISO:
-Se estiver usando ShellHub para executar este script. Não deixe de informar seu token para que a conexão seja retomada. Se não for usar o script na raiz do seridor, adapte a execução.
+Se estiver usando ShellHub para executar este script. Não deixe de informar seu token para que a conexão seja retomada. Se não for usar o script na raiz do seu servidor, adapte a execução.
 
 
 Para **execução (na raiz)** via SSH dockerizado, use:
