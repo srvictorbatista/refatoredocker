@@ -9,7 +9,7 @@ Este script foi testado em ambientes Ubuntu 22.04, Ubuntu 25 e usado em produç�
 ## Ao executar este script uma contagem regressiva de 60 segundos é iniciada, antes de realizar as alterações necessárias.
 
 # AVISO:
-Se estiver usando ShellHub para executar este script. Não deixe de informar seu token para que a conexão seja retomada.
+Se estiver usando ShellHub para executar este script. Não deixe de informar seu token para que a conexão seja retomada. Se não for usar o script na raiz do seridor, adapte a execução.
 
 ## FUNÇÕES:
   - Abort e kill forçado do Snap Docker e containers travados
@@ -22,7 +22,7 @@ Se estiver usando ShellHub para executar este script. Não deixe de informar seu
 Informações adicionais no próprio script.
 
 
- Para execucao via SSH dockerizado, use:
+ Para **execução (na raiz)** via SSH dockerizado, use:
 ``` 
 chmod +x ./refatoredocker.sh && setsid bash -c '/refatoredocker.sh > /refatoredocker.log 2>&1 < /dev/null; reboot' && tail -f /refatoredocker.log
 ```
