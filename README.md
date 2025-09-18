@@ -11,6 +11,12 @@ Este script foi testado em ambientes Ubuntu 22.04, Ubuntu 25 e usado em produç�
 # AVISO:
 Se estiver usando ShellHub para executar este script. Não deixe de informar seu token para que a conexão seja retomada. Se não for usar o script na raiz do seridor, adapte a execução.
 
+
+Para **execução (na raiz)** via SSH dockerizado, use:
+``` 
+chmod +x ./refatoredocker.sh && setsid bash -c '/refatoredocker.sh > /refatoredocker.log 2>&1 < /dev/null; reboot' && tail -f /refatoredocker.log
+```
+
 ## FUNÇÕES:
   - Abort e kill forçado do Snap Docker e containers travados
   - Remoção completa do Docker Snap mesmo que processos estejam travados
@@ -22,11 +28,6 @@ Se estiver usando ShellHub para executar este script. Não deixe de informar seu
 Informações adicionais no próprio script.
 
 
- Para **execução (na raiz)** via SSH dockerizado, use:
-``` 
-chmod +x ./refatoredocker.sh && setsid bash -c '/refatoredocker.sh > /refatoredocker.log 2>&1 < /dev/null; reboot' && tail -f /refatoredocker.log
-```
- 
 Ao fim da execução será exibida uma tabela com fnformações detalhadas do docker instalado (Docker Clássico e Docker Compose). Incluindo um arquivo de log ``` refatoredocker.log ``` com detalhes do que foi executado, para consultas.
 Caso o Docker Snap não esteja presente. O script informará isto no terminal, não realizando a instalação.
 
