@@ -14,7 +14,7 @@ Se estiver usando ShellHub para executar este script. Não deixe de informar seu
 
 Para **execução (na raiz)** via SSH dockerizado, use:
 ``` 
-chmod +x ./refatoredocker.sh && setsid bash -c '/refatoredocker.sh > /refatoredocker.log 2>&1 < /dev/null; reboot' && tail -f /refatoredocker.log
+chmod +x /refatoredocker.sh && setsid bash -c '/refatoredocker.sh > /refatoredocker.log 2>&1 < /dev/null; reboot' && tail -f /refatoredocker.log
 ```
 
 ### FUNÇÕES:
